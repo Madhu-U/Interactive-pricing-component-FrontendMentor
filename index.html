@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="card__title">
+      <h1 class="title">Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial.</p>
+      <p>No credit card required.</p>
+    </div>
+    <div class="card">
+      <p class="card__views">Pageviews</p>
+      <div class="card__slider">
+        <input type="range" name="slider" id="slider" name="pricing-card" />
+        <label for="range">$ /month</label>
+      </div>
+      <div class="card__toggle">
+        <input type="checkbox" id="toggle-check" name="pricing-card" />
+        <p>Monthly Billing</p>
+        <label for="toggle-check">
+          <div class="toggle-switch"></div>
+        </label>
+        <p>Yearly Billing</p>
+        <span>25% discount</span>
+      </div>
+      <hr />
+      <div class="card__info">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+      </div>
+      <input
+        type="submit"
+        class="card__button"
+        name="pricing-card"
+        value="Start my trial"
+      />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
